@@ -1,0 +1,4 @@
+run = ["nix-build", "-E", "let pkgs = ((import <nixpkgs>) {}); in pkgs.callPackage ./default.nix {}"]
+
+[nix]
+channel = "stable-21_11"
